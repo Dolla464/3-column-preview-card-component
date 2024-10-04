@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+:root {
+    --sedan-Bright-orange: hsl(31, 77%, 52%);
+    --suv-Dark-cyan: hsl(184, 100%, 22%);
+    --luxury-Very-dark-cyan: hsl(179, 100%, 13%);
+    --background-white: hsl(0, 0%, 95%);
+    --words-white:hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-white);
+}
+
+.container {
+    background-color: aqua;
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container img {
+    margin: 35px;
+}
+
+.container h2 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--background-white);
+    margin: 0 35px;
+    margin-bottom: 35px;
+
+}
+
+.container p {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 35px;
+    margin-bottom: 35px;
+    padding-right: 35px;
+    color: var(--words-white);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.container button {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin: 35px;
+    background-color: var(--background-white);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+}
+
+.sedans {
+    background-color: var(--sedan-Bright-orange);
+    border-radius: 15px 0 0 15px;
+}
+
+.sedans button {
+    color: var(--sedan-Bright-orange);
+}
+
+.suvs {
+    background-color: var(--suv-Dark-cyan);
+}
+
+.suvs button {
+    color: var(--suv-Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--luxury-Very-dark-cyan);
+    border-radius: 0 15px 15px 0;
+}
+
+.luxury button {
+    color: var(--luxury-Very-dark-cyan);
+}
+
+.container button:hover {
+    background-color: transparent;
+    color: var(--background-white);
+    border: 2px solid var(--background-white);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     font-weight: 600; 
+}
